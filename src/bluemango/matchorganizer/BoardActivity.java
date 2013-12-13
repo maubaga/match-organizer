@@ -5,7 +5,8 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.Menu;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -47,7 +48,7 @@ public class BoardActivity extends Activity {
 			
 			LinearLayout linearMatch = new LinearLayout(this);
 			linearMatch.setOrientation(LinearLayout.HORIZONTAL);
-			linearMatch.setPadding(0, 0, 0, -35);
+			linearMatch.setPadding(0, 0, 10, -35);
 			
 			TextView dayMatches1 = new TextView(this);
 			dayMatches1.setTextSize(25);
@@ -68,7 +69,7 @@ public class BoardActivity extends Activity {
 			dayMatches2.setTypeface(null, Typeface.BOLD);
 			dayMatches2.setPadding(15, 0, 0, 0);
 			dayMatches2.setText(dayArray[i].secondTeam());
-			
+						
 			
 			mainLayout.addView(day);
 			linearMatch.addView(dayMatches1);
