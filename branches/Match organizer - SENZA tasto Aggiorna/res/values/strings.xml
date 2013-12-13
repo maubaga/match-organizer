@@ -48,22 +48,13 @@
         <item>14</item>
         <item>15</item>
     </string-array>
-    
+
     <string name="type">Numero incontri: </string>
-    
+
     <string-array name="tipi">
         <item>Solo andata</item>
         <item>Andata e ritorno</item>
     </string-array>
-    <!-- ****************INFO**************** -->
-    <string name="title_activity_info">Info</string>
-    <string name="info_title">Info</string>
-    <string name="info_text_h1"><b>Match organizer</b></string>
-    <string name="info_ver">Version: <b>0.1.0</b></string>
-    <string name="info_text">Quest\'applicazione è stata ideata e creata da <b>Matteo Franzosi</b>. Spero
-	di aver aiutato tutti i disperati che cercano di organizzare delle
-	equilibrate partite di calcio.</string>
-    <string name="info_cop">&#169;2013 Matteo Franzosi</string>
     <!-- ****************GUIDA**************** -->
     <string name="title_activity_guide">Guida</string>
     <string name="guide_organize_h1"><b>ORGANIZZA</b></string>
@@ -73,17 +64,27 @@
         il tasto <i>Aggiungi giocatore</i>. Per ogni calciatore dovrai inserire: Nome, Cognome, Valore, Ruolo e Numero di telefono.\n\n<b>-</b> Valore: questo numero da 1 a 10 indica la bravura del giocatore e servirà per equilibrare le squadre perciò bisogna
         essere il più realistici possibile.\n<b>-</b> Ruolo: si divide in Portiere, Difensore, Centrocampista e Attaccante. Un calciatore può avere più di un ruolo preferito.\n<b>-</b> Numero di telefono: è facoltativo in quanto serve solo nel caso si voglia usare la funzione di contatto automatico.\n\n
         Inoltre se avete già assegnato delle pagelle la media delle stesse verrà visualizzata accanto al proprio giocatore.</string>
-    <string name="guide_ratings_h1"><b>PAGELLE</b></string>
-    <string name="guide_ratings">        Dopo ogni partita non dimenticarti di dare un voto ai giocatori. Questi voti andranno a formare una media per ogni individuo 
-        che servirà per formare il Dream Team ma soprattutto per simulare le partite. (In futuro potrebbe essere usata anche per
-        la creazione delle squadre in aggiunta al valore di ogni individuo).</string>
-    <string name="guide_dream_team_h1"><b>DREAM TEAM</b></string>
-    <string name="guide_dream_team">        Questa sezione è dedicata ai migliori giocatori presenti nel tuo database. Puoi scegliere il numero di giocatori della
-        squadra e osservare chi sono i calciatori con le medie migliori. Non ti resta altro che impegnarti per avere una media migliore
-        della loro e comparire in questa sezione esclusiva solo per i campioni.</string>
+    <string name="guide_dream_team_h1"><b>STATISTICHE</b></string>
+    <string name="guide_dream_team">        Questa sezione è dedicata a tutte le statistiche riguardo i giocatori presenti nel tuo database.
+         Devi solo ricordarti di aggiornare i dati dopo ogni partita.\nInoltre è presente 
+         la sezione <b>Dream Team</b> in cui sono presenti solo i migliori giocatori. Potrai
+         consultare la migliore squadra possibile, scegliere il numero di giocatori, osservare 
+         chi sono i calciatori con le medie migliori. Non ti resta altro che impegnarti per avere una media migliore
+        della loro e comparire in questa sezione esclusiva solo per i veri campioni.</string>
     <string name="guide_tournament_h1"><b>CREA TORNEO</b></string>
-    <string name="guide_tournament">        Per creare un torneo bastano pochi e semplici passaggi:<b>-</b> Scegli un nome per il tuo torneo.\n<b>-</b> Imposta il numero di squadre/giocatori partecipanti.\n<b>-</b> Scegli il nome delle squadre/giocatori.\n<b>-</b> Imposta i punti assegnati in caso di vittoria.\n<b>-</b> Imposta i punti assegnati in caso di pareggio.\n<b>-</b> Imposta i punti necessari per vincere (se necessario).\n\n
-        Una volta creata la struttura delle varie giornate devi solo inserire i punteggi dopo ogni partita e premere il tasto <i>Aggiorna</i> per aggiornare la classifica.</string>
+    <string name="guide_tournament">        Per creare un torneo bastano pochi e semplici passaggi:\n<b>-</b> Scegli un nome per il tuo torneo.\n<b>-</b> Imposta il numero di squadre/giocatori partecipanti.\n<b>-</b> Imposta i punti assegnati in caso di vittoria.\n<b>-</b> Imposta i punti assegnati in caso di pareggio.\n
+<b>-</b> Scegli la tipologia di torneo: <i>Solo andata</i> o <i>Andata e ritorno</i>.\n
+<b>-</b> Scegli il nome delle squadre/giocatori.\n<b>-</b> Una volta creata la struttura delle varie giornate devi solo inserire i punteggi dopo ogni partita e premere il tasto <i>Aggiorna</i> per aggiornare la classifica.</string>
+
+    <!-- ****************INFO**************** -->
+    <string name="title_activity_info">Info</string>
+    <string name="info_title">Info</string>
+    <string name="info_text_h1"><b>Match organizer</b></string>
+    <string name="info_ver">Version: <b>0.2.1</b></string>
+    <string name="info_text">Quest\'applicazione è stata ideata e creata da <b>Matteo Franzosi</b>. Spero
+	di aver aiutato tutti i disperati che cercano di organizzare delle
+	equilibrate partite di calcio.</string>
+    <string name="info_cop">&#169;2013 Matteo Franzosi</string>
 
     <!-- ****************GENERALI**************** -->
     <string name="confirm">Conferma</string>

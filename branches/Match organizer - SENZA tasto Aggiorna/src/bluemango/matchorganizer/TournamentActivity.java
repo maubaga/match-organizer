@@ -25,11 +25,13 @@ public class TournamentActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tournament);
 
+		//Spinner per selezionare il numero di squadre
 		Spinner s = (Spinner) findViewById(R.id.spinner);
 		ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.numeri, android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		s.setAdapter(adapter);	
 		
+		//Spinner per selezionare il numero di incontri
 		Spinner t = (Spinner) findViewById(R.id.match_type);
 		ArrayAdapter Aadapter = ArrayAdapter.createFromResource(this, R.array.tipi, android.R.layout.simple_spinner_item);
 		Aadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -39,6 +41,7 @@ public class TournamentActivity extends Activity {
 	
 	public void nameTeams(View view) {
 
+		//EditText per avere il nome del torneo
 		EditText tour_title = (EditText) findViewById(R.id.tournament);
 		String tour = tour_title.getText().toString();
 
@@ -48,6 +51,7 @@ public class TournamentActivity extends Activity {
 			return;
 		}
 
+		//Spinner per avere il numero di squadre
 		Spinner editTeams = (Spinner) findViewById(R.id.spinner);
 		String teams = editTeams.getSelectedItem().toString();
 

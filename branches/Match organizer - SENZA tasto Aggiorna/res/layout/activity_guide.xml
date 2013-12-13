@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffdddddd">
-<LinearLayout 
+    android:background="#ffdddddd"><LinearLayout 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingLeft="15dp"
@@ -35,19 +34,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/guide_players"
             android:textSize="20sp"/>
-        
-        <TextView 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/guide_ratings_h1"
-            android:textSize="30sp"/>
-        <TextView 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/guide_ratings"
-            android:textSize="20sp"/>
+
         
         <TextView 
             android:layout_width="match_parent"
