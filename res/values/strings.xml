@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Match organizer</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="organize">ORGANIZZA</string>
+    <string name="players_list">GIOCATORI</string>
+    <string name="stats">STATISTICHE</string>
+    <string name="create_tournament">CREA TORNEO</string>
+    <string name="guide">GUIDA</string>
+    <string name="info">INFO</string>
+    <!-- ****************ORGANIZZA**************** -->
+    <string name="title_activity_organizer">Organizza</string>
+    <string name="v3"><b>3</b> vs <b>3</b></string>
+    <string name="v5"><b>5</b> vs <b>5</b></string>
+    <string name="v6"><b>6</b> vs <b>6</b></string>
+    <string name="v7"><b>7</b> vs <b>7</b></string>
+    <string name="v11"><b>11</b> vs <b>11</b></string>
+    <string name="select_players_h1"><b>Seleziona i giocatori:</b></string>
+    <!-- ****************GIOCATORI**************** -->
+    <string name="title_activity_player">Giocatori</string>
+    <string name="add_player">Aggiungi giocatore</string>
+    <!-- ****************TORNEO**************** -->
+    <string name="title_activity_tournament">Crea torneo</string>
+    <string name="title_activity_naming_teams">Nomi squadre/giocatori</string>
+    <string name="title_activity_board">Tabellone torneo</string>
+    <string name="name">Nome torneo: </string>
+    <string name="number">Numero squadre:</string>
+    <string name="number_select">Seleziona il numero</string>
+    <string name="point">Punti vittoria: </string>
+    <string name="parity">Punti pareggio:</string>
+    <string name="insert_name">Digita il nome</string>
+    <string name="insert_point">Punti</string>
+    <string name="insert_parity">Punti</string>
+
+    <string-array name="numeri">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    
+    <string name="type">Numero incontri: </string>
+    
+    <string-array name="tipi">
+        <item>Solo andata</item>
+        <item>Andata e ritorno</item>
+    </string-array>
+    <!-- ****************INFO**************** -->
+    <string name="title_activity_info">Info</string>
+    <string name="info_title">Info</string>
+    <string name="info_text_h1"><b>Match organizer</b></string>
+    <string name="info_ver">Version: <b>0.1.0</b></string>
+    <string name="info_text">Quest\'applicazione è stata ideata e creata da <b>Matteo Franzosi</b>. Spero
+	di aver aiutato tutti i disperati che cercano di organizzare delle
+	equilibrate partite di calcio.</string>
+    <string name="info_cop">&#169;2013 Matteo Franzosi</string>
+    <!-- ****************GUIDA**************** -->
+    <string name="title_activity_guide">Guida</string>
+    <string name="guide_organize_h1"><b>ORGANIZZA</b></string>
+    <string name="guide_organize"><b>1.</b> Seleziona il numero di giocatori per squadra.\n\n <b>2.</b> Seleziona i giocatori che partecipano alla partita.\n\n<b>3.</b> Se sei soddisfatto delle squadre premi il tasto <i>Sono soddisfatto</i> altrimenti <i>Riprova</i>.\n\n<b>4.</b> Una volta che le squadre sono state formate, puoi inserire Data, Ora e Luogo della partita e premendo il tasto<i>Contatta</i> invierai un messaggio a tutti i giocatori partecipanti.</string>
+    <string name="guide_players_h1"><b>GIOCATORI</b></string>
+    <string name="guide_players">        Qui è presente l\'elenco di tutti i giocatori che hai salvato sul tuo dispositivo. Per aggiungere un giocatore premi 
+        il tasto <i>Aggiungi giocatore</i>. Per ogni calciatore dovrai inserire: Nome, Cognome, Valore, Ruolo e Numero di telefono.\n\n<b>-</b> Valore: questo numero da 1 a 10 indica la bravura del giocatore e servirà per equilibrare le squadre perciò bisogna
+        essere il più realistici possibile.\n<b>-</b> Ruolo: si divide in Portiere, Difensore, Centrocampista e Attaccante. Un calciatore può avere più di un ruolo preferito.\n<b>-</b> Numero di telefono: è facoltativo in quanto serve solo nel caso si voglia usare la funzione di contatto automatico.\n\n
+        Inoltre se avete già assegnato delle pagelle la media delle stesse verrà visualizzata accanto al proprio giocatore.</string>
+    <string name="guide_ratings_h1"><b>PAGELLE</b></string>
+    <string name="guide_ratings">        Dopo ogni partita non dimenticarti di dare un voto ai giocatori. Questi voti andranno a formare una media per ogni individuo 
+        che servirà per formare il Dream Team ma soprattutto per simulare le partite. (In futuro potrebbe essere usata anche per
+        la creazione delle squadre in aggiunta al valore di ogni individuo).</string>
+    <string name="guide_dream_team_h1"><b>DREAM TEAM</b></string>
+    <string name="guide_dream_team">        Questa sezione è dedicata ai migliori giocatori presenti nel tuo database. Puoi scegliere il numero di giocatori della
+        squadra e osservare chi sono i calciatori con le medie migliori. Non ti resta altro che impegnarti per avere una media migliore
+        della loro e comparire in questa sezione esclusiva solo per i campioni.</string>
+    <string name="guide_tournament_h1"><b>CREA TORNEO</b></string>
+    <string name="guide_tournament">        Per creare un torneo bastano pochi e semplici passaggi:<b>-</b> Scegli un nome per il tuo torneo.\n<b>-</b> Imposta il numero di squadre/giocatori partecipanti.\n<b>-</b> Scegli il nome delle squadre/giocatori.\n<b>-</b> Imposta i punti assegnati in caso di vittoria.\n<b>-</b> Imposta i punti assegnati in caso di pareggio.\n<b>-</b> Imposta i punti necessari per vincere (se necessario).\n\n
+        Una volta creata la struttura delle varie giornate devi solo inserire i punteggi dopo ogni partita e premere il tasto <i>Aggiorna</i> per aggiornare la classifica.</string>
+
+    <!-- ****************GENERALI**************** -->
+    <string name="confirm">Conferma</string>
+
+</resources>
