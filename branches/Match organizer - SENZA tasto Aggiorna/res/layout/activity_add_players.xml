@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffdddddd" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="@string/player_name"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_name"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/value"
+            android:textSize="22sp" />
+
+        <Spinner
+            android:id="@+id/edit_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:text="@string/position"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/gk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/gk"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/dif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/dif"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/cen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/cen"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/att"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/att"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tel_number"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edit_number"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_number"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_pressed"
+                android:onClick="addPlayer"
+                android:text="@string/add"
+                android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

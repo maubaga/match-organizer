@@ -13,49 +13,44 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_pressed"
-            android:onClick="goOrganizer"
+            android:onClick="goPlayerSelectionV3"
             android:text="@string/v3"
-            android:textSize="30sp"
-            android:clickable="false" />
+            android:textSize="30sp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/button_pressed"
-            android:onClick="go_players_db"
+            android:onClick="goPlayerSelectionV5"
             android:text="@string/v5"
-            android:textSize="30sp"
-            android:clickable="false" />
+            android:textSize="30sp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/button_pressed"
-            android:onClick="go_organizer"
+            android:onClick="goPlayerSelectionV6"
             android:text="@string/v6"
-            android:textSize="30sp"
-            android:clickable="false" />
+            android:textSize="30sp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/button_pressed"
-            android:onClick="go_players_db"
+            android:onClick="goPlayerSelectionV7"
             android:text="@string/v7"
-            android:textSize="30sp"
-            android:clickable="false" />
+            android:textSize="30sp" />
         
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/button_pressed"
-            android:onClick="go_organizer"
+            android:onClick="goPlayerSelectionV11"
             android:text="@string/v11"
-            android:textSize="30sp"
-            android:clickable="false" />
+            android:textSize="30sp" />
 
 </LinearLayout>

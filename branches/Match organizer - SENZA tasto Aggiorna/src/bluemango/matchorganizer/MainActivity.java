@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -27,13 +26,6 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
     
-    @Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.guide, menu);
-		return true;
-	}
-    
     public void goOrganizer(View view) {
     	startActivity(new Intent(this, OrganizerActivity.class));
     }
@@ -52,6 +44,10 @@ public class MainActivity extends Activity {
     
     public void goInfo(View view) {
     	startActivity(new Intent(this, InfoActivity.class));
+    }
+    
+    public void goLog(View view) {
+    	startActivity(new Intent(this, LogActivity.class));
     }
     
 }

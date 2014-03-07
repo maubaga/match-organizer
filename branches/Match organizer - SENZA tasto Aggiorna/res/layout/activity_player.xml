@@ -1,24 +1,124 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffdddddd">
-<LinearLayout 
-	android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingLeft="30dp"
-    android:paddingRight="30dp"
-    android:orientation="vertical" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffdddddd" >
 
-    <Button
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:background="@drawable/button_pressed"
             android:onClick="addPlayer"
             android:text="@string/add_player"
-            android:textSize="30sp"
-            android:clickable="false" />
+            android:textSize="25sp"
+            android:layout_marginRight="10dp" />
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pressed"
+            android:onClick="clearData"
+            android:text="@string/delete"
+            android:textColor="#FFDC0918"
+            android:textSize="25sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="-18dp" >
+
+        <TextView
+            android:id="@+id/rowid_h1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="#ffaaaaaa"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="N°"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/rowidcolon_h1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_toRightOf="@id/rowid_h1"
+            android:background="#ffaaaaaa"
+            android:text="| "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/nome_h1"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rowidcolon_h1"
+            android:paddingLeft="8dp"
+            android:background="#ffaaaaaa"
+            android:text="Nome"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/valore_h1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/nome_h1"
+            android:background="#ffaaaaaa"
+            android:gravity="center"
+            android:text="Valore"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ruolo_h1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/valore_h1"
+            android:background="#ffaaaaaa"
+            android:gravity="center"
+            android:text="Ruolo"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/numero_h1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ruolo_h1"
+            android:background="#ffaaaaaa"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Telefono"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- Note built-in ids for 'list' and 'empty' -->
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty"
+        android:textColor="#FFDC0918"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
 
 </LinearLayout>
-</ScrollView>

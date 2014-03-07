@@ -9,20 +9,77 @@
     <string name="create_tournament">CREA TORNEO</string>
     <string name="guide">GUIDA</string>
     <string name="info">INFO</string>
+    <string name="log">ChangeLog</string>
     <!-- ****************ORGANIZZA**************** -->
-    <string name="title_activity_organizer">Organizza</string>
+    <string name="title_activity_organizer">Numero dei giocatori</string>
     <string name="v3"><b>3</b> vs <b>3</b></string>
     <string name="v5"><b>5</b> vs <b>5</b></string>
     <string name="v6"><b>6</b> vs <b>6</b></string>
     <string name="v7"><b>7</b> vs <b>7</b></string>
     <string name="v11"><b>11</b> vs <b>11</b></string>
-    <string name="select_players_h1"><b>Seleziona i giocatori:</b></string>
+    <string name="title_activity_player_selection_v11">Scelta dei giocatori</string>
+    <string name="title_activity_match_board_v11">Disposizione dei giocatori</string>
+    <string name="title_activity_player_selection_v7">Scelta dei giocatori</string>
+    <string name="title_activity_match_board_v7">Disposizione dei giocatori</string>
+    <string name="title_activity_player_selection_v6">Scelta dei giocatori</string>
+    <string name="title_activity_match_board_v6">Disposizione dei giocatori</string>
+    <string name="title_activity_player_selection_v5">Scelta dei giocatori</string>
+    <string name="title_activity_match_board_v5">Disposizione dei giocatori</string>
+    <string name="title_activity_player_selection_v3">Scelta dei giocatori</string>
+    <string name="title_activity_match_board_v3">Disposizione dei giocatori</string>
+    <string name="select_players_h1">Seleziona i giocatori:</string>
+    <string name="status">Check status</string>
     <!-- ****************GIOCATORI**************** -->
-    <string name="title_activity_player">Giocatori</string>
+    <string name="title_activity_player">Elenco dei giocatori</string>
+    <string name="title_activity_add_players">Dettagli giocatore</string>
+    <string name="empty">Nessun giocatore presente!</string>
     <string name="add_player">Aggiungi giocatore</string>
+    <string name="title_activity_adding">AddingActivity</string>
+    <string name="player_name">Nome giocatore:</string>
+    <string name="enter_name">Inserisci nome</string>
+    <string name="value">Valore:</string>
+    <string name="enter_value">Inserisci valore</string>
+    <string name="position">Ruolo:</string>
+    <string name="enter_position">Inserisci ruolo</string>
+    <string name="tel_number">Num. di telefono:</string>
+    <string name="enter_number">Inserisci numero</string>
+    <string name="add">Aggiungi</string>
+    <string name="delete"><b>X</b></string>
+    <string name="title_activity_confirm_delete">Confermi?</string>
+
+    <string-array name="value_options">
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>5</item>
+        <item>5.5</item>
+        <item>6</item>
+        <item>6.5</item>
+        <item>7</item>
+        <item>7.5</item>
+        <item>8</item>
+        <item>8.5</item>
+        <item>9</item>
+        <item>9.5</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="gk">Portiere</string>
+    <string name="dif">Difensore</string>
+    <string name="cen">Centrocampista</string>
+    <string name="att">Attaccante</string>
+
+    <string-array name="menu">
+        <item>Modifica</item>
+        <item>Elimina</item>
+    </string-array>
     <!-- ****************TORNEO**************** -->
-    <string name="title_activity_tournament">Crea torneo</string>
-    <string name="title_activity_naming_teams">Nomi squadre/giocatori</string>
+    <string name="title_activity_tournament">Dettagli torneo</string>
     <string name="title_activity_board">Tabellone torneo</string>
     <string name="name">Nome torneo: </string>
     <string name="number">Numero squadre:</string>
@@ -72,21 +129,79 @@
          chi sono i calciatori con le medie migliori. Non ti resta altro che impegnarti per avere una media migliore
         della loro e comparire in questa sezione esclusiva solo per i veri campioni.</string>
     <string name="guide_tournament_h1"><b>CREA TORNEO</b></string>
-    <string name="guide_tournament">        Per creare un torneo bastano pochi e semplici passaggi:\n<b>-</b> Scegli un nome per il tuo torneo.\n<b>-</b> Imposta il numero di squadre/giocatori partecipanti.\n<b>-</b> Imposta i punti assegnati in caso di vittoria.\n<b>-</b> Imposta i punti assegnati in caso di pareggio.\n
-<b>-</b> Scegli la tipologia di torneo: <i>Solo andata</i> o <i>Andata e ritorno</i>.\n
-<b>-</b> Scegli il nome delle squadre/giocatori.\n<b>-</b> Una volta creata la struttura delle varie giornate devi solo inserire i punteggi dopo ogni partita e premere il tasto <i>Aggiorna</i> per aggiornare la classifica.</string>
+    <string name="guide_tournament">        Per creare un torneo bastano pochi e semplici passaggi:\n<b>-</b> Scegli un nome per il tuo torneo.\n<b>-</b> Imposta il numero di squadre/giocatori partecipanti.\n<b>-</b> Imposta i punti assegnati in caso di vittoria.\n<b>-</b> Imposta i punti assegnati in caso di pareggio.\n<b>-</b> Scegli la tipologia di torneo: <i>Solo andata</i> o <i>Andata e ritorno</i>.\n<b>-</b> Scegli il nome delle squadre/giocatori.\n<b>-</b> Una volta creata la struttura delle varie giornate devi solo inserire i punteggi dopo ogni partita e premere il tasto <i>Aggiorna</i> per aggiornare la classifica.</string>
 
     <!-- ****************INFO**************** -->
-    <string name="title_activity_info">Info</string>
+    <string name="title_activity_info">Informazioni</string>
     <string name="info_title">Info</string>
     <string name="info_text_h1"><b>Match organizer</b></string>
-    <string name="info_ver">Version: <b>0.2.1</b></string>
+    <string name="info_ver">Versione: <b>1.0.2</b></string>
     <string name="info_text">Quest\'applicazione è stata ideata e creata da <b>Matteo Franzosi</b>. Spero
 	di aver aiutato tutti i disperati che cercano di organizzare delle
 	equilibrate partite di calcio.</string>
-    <string name="info_cop">&#169;2013 Matteo Franzosi</string>
+    <string name="info_cop">&#169;2014 Matteo Franzosi</string>
+    <string name="flag">Segnala bug</string>
+
+    <!-- ****************CHANGELOG**************** -->
+    <string name="title_activity_log">Registro modifiche</string>
+    <string name="ver_h1_0.1.0"><b>0.1.0</b></string>
+    <string name="ver_info_0.1.0">+ Creata l\'applicazione
+        \n+ Aggiunto il menù principale</string>
+    <string name="ver_h1_0.1.1"><b>0.1.1</b></string>
+    <string name="ver_info_0.1.1">+ Aggiunta la guida
+        \n+ Aggiunte le info
+        \n+ Aggiunta una bozza del database
+        \n+ Agg. una bozza del menù in Organizza</string>
+    <string name="ver_h1_0.1.2"><b>0.1.2</b></string>
+    <string name="ver_info_0.1.2">+ Modificate le info
+        \n+ Dream Team è diventato Statistiche
+        \n+ Modificata la guida</string>
+    <string name="ver_h1_0.2.0"><b>0.2.0</b></string>
+    <string name="ver_info_0.2.0">+ Finito Crea Torneo</string>
+    <string name="ver_h1_0.2.1"><b>0.2.1</b></string>
+    <string name="ver_info_0.2.1">+ Migliorato Crea Torneo
+        \n+ Aggiunto il ChangeLog</string>
+    <string name="ver_h1_0.2.2"><b>0.2.2</b></string>
+    <string name="ver_info_0.2.2">+ Aggiornato il copyright
+        \n+ Eliminati tutti i menù
+        \n+ Corretto messaggio in Crea torneo
+        \n+ Sistemato il padding in Crea torneo</string>
+    <string name="ver_h1_0.3.0"><b>0.3.0</b></string>
+    <string name="ver_info_0.3.0">+ Creato il database
+        \n+ Corretto errore nel ChangeLog
+        \n+ Sistemato pulsante nel database</string>
+    <string name="ver_h1_0.3.1"><b>0.3.1</b></string>
+    <string name="ver_info_0.3.1">+ Sistemata pagina Aggiungi giocatore
+        \n+ Corretti alcuni titoli</string>
+    <string name="ver_h1_1.0.0"><b>1.0.0</b></string>
+    <string name="ver_info_1.0.0">+ Agg. algoritmo di creazione squadre
+        \n+ Corretta la rotazione dello schermo
+        \n+ Aggiunta la Segnalazione bug
+        \n+ Corretto il ritorno al menù in Giocatori
+        \n+ Corretti i nomi dei ruoli in Giocatori</string>
+    <string name="ver_h1_1.0.1"><b>1.0.1</b></string>
+    <string name="ver_info_1.0.1">+ Agg. tasto Elimina tutto in Giocatori
+        \n+ Corretto il testo in generale
+        \n+ Aggiornato l\'algoritmo di creazione
+        \n+ Esteso l\'algoritmo in 3 v 3</string>
+    <string name="ver_h1_1.0.2"><b>1.0.2</b></string>
+    <string name="ver_info_1.0.2">+ Risolto bug in Aggiungi giocatore
+        \n+ Esteso l\'algoritmo a tutti i tipi di partite
+        \n+ Sistemati tutti i messaggi di errore
+        \n+ Aggiunti dei commenti in Organizza</string>
+    <string name="ver_h1_1.0.3"><b>1.0.3</b></string>
+    <string name="ver_info_1.0.3">+ Risolto bug in Organizza</string>
+
+    <!-- ****************SEGNALAZIONE BUG**************** -->
+    <string name="title_activity_flag">Segnalazione bug</string>
+    <string name="reason">Motivo:</string>
+    <string name="reason_hint">Indica il motivo della tua segnalazione</string>
+    <string name="send">Invia</string>
+    <string name="mail_note">Nota:\nL\'oggetto dell\'email deve essere \"Bug report\". Quest\'email verrà inviata a <b>matteo.franzosi@hotmail.it</b></string>
 
     <!-- ****************GENERALI**************** -->
     <string name="confirm">Conferma</string>
+    <string name="yes">Elimina</string>
+    <string name="no">Annulla</string>
 
 </resources>

@@ -29,9 +29,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="20dp"
+        android:paddingBottom="10dp"
         android:text="@string/info_cop"
         android:layout_gravity="center"
         android:textSize="20sp"  />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/flag"
+        android:layout_gravity="right"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:onClick="goFlag"
+        android:textColor="#ff888888" />
 
 </LinearLayout>
