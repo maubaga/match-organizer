@@ -3,9 +3,7 @@ package bluemango.matchorganizer;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -20,6 +18,7 @@ public class TournamentActivity extends Activity {
 	public final static String TOUR_NAME = "bluemango.matchorganizer.NAME";
 	public final static String TEAMS_NUM = "bluemango.matchorganizer.TEAMS";
 
+	@SuppressWarnings("rawtypes")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,15 +29,15 @@ public class TournamentActivity extends Activity {
 		ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.numeri, android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		s.setAdapter(adapter);	
-		
+
 		//Spinner per selezionare il numero di incontri
 		Spinner t = (Spinner) findViewById(R.id.match_type);
 		ArrayAdapter Aadapter = ArrayAdapter.createFromResource(this, R.array.tipi, android.R.layout.simple_spinner_item);
 		Aadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		t.setAdapter(Aadapter);	
-		
+
 	}
-	
+
 	public void nameTeams(View view) {
 
 		//EditText per avere il nome del torneo
@@ -46,14 +45,17 @@ public class TournamentActivity extends Activity {
 		String tour = tour_title.getText().toString();
 
 		if(tour.equals("")){
-			Toast.makeText(getBaseContext(), "Devi inserire un nome per il torneo",
-					Toast.LENGTH_LONG).show();
+			Toast.makeText(getBaseContext(), "Devi inserire un nome per il torneo",Toast.LENGTH_SHORT).show();
 			return;
 		}
 
 		//Spinner per avere il numero di squadre
 		Spinner editTeams = (Spinner) findViewById(R.id.spinner);
 		String teams = editTeams.getSelectedItem().toString();
+
+		//Spinner per avere il tipo di torneo
+		Spinner matchType = (Spinner) findViewById(R.id.match_type);
+		String match_type = matchType.getSelectedItem().toString();
 
 		TextView[] team = new TextView[15];
 		EditText[] team_name = new EditText[15];
@@ -81,9 +83,10 @@ public class TournamentActivity extends Activity {
 		final EditText[] nomeTeam = team_name;
 		final String numbers = teams;
 		final String tour_name = tour;
-		
+		final String typeOfMatch = match_type;
+
 		final int numberToView = Integer.parseInt(teams);
-		
+
 		Button confirmButton = new Button(this);
 		confirmButton.setTextSize(25);
 		confirmButton.setText("Conferma");
@@ -93,15 +96,14 @@ public class TournamentActivity extends Activity {
 
 			public void onClick(View v) {
 				String[] squads = new String[15];
-				
+
 				for (int i = 0; i < 15; i++){
 					squads[i] = nomeTeam[i].getText().toString();
 				}
-				
+
 				for (int i = 0; i < numberToView; i++){
 					if(squads[i].equals("")){
-						Toast.makeText(getBaseContext(), "Devi inserire un nome per la Squadra" + (i + 1),
-								Toast.LENGTH_LONG).show();
+						Toast.makeText(getBaseContext(), "Devi inserire un nome per la Squadra " + (i + 1),Toast.LENGTH_SHORT).show();
 						return;
 					}
 				}
@@ -110,6 +112,7 @@ public class TournamentActivity extends Activity {
 				intent.putExtra("tour_name", tour_name);
 				intent.putExtra("squads", squads);
 				intent.putExtra("numbers", numbers);
+				intent.putExtra("typeOfMatch", typeOfMatch);
 				startActivity(intent);
 
 			}
@@ -125,10 +128,10 @@ public class TournamentActivity extends Activity {
 		LinearLayout verticalLayout = new LinearLayout(this);
 		verticalLayout.setOrientation(LinearLayout.VERTICAL);
 		verticalLayout.setPadding(0, 30, 0, 0);
-		
+
 		Button firstButton = (Button) findViewById(R.id.first_confirm);
 		firstButton.setVisibility(View.GONE);
-		
+
 		TextView line = new TextView(this);
 		line.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, 5));
 		line.setBackgroundColor(0xFF000000);
