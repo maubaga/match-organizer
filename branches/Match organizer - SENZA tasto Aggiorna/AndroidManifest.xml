@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
     <application
@@ -55,14 +55,73 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="bluemango.matchorganizer.NamingTeamsActivity"
-            android:label="@string/title_activity_naming_teams"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="bluemango.matchorganizer.BoardActivity"
             android:label="@string/title_activity_board"
             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.LogActivity"
+            android:label="@string/title_activity_log"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.AddPlayersActivity"
+            android:label="@string/title_activity_add_players"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.PlayerSelectionV5Activity"
+            android:label="@string/title_activity_player_selection_v5"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.FlagActivity"
+            android:label="@string/title_activity_flag"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.MatchBoardV5Activity"
+            android:label="@string/title_activity_match_board_v5"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.ConfirmDeleteActivity"
+            android:label="@string/title_activity_confirm_delete"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.PlayerSelectionV3Activity"
+            android:label="@string/title_activity_player_selection_v3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.MatchBoardV3Activity"
+            android:label="@string/title_activity_match_board_v3" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.PlayerSelectionV6Activity"
+            android:label="@string/title_activity_player_selection_v6" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.MatchBoardV6Activity"
+            android:label="@string/title_activity_match_board_v6" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.PlayerSelectionV7Activity"
+            android:label="@string/title_activity_player_selection_v7" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.MatchBoardV7Activity"
+            android:label="@string/title_activity_match_board_v7" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.PlayerSelectionV11Activity"
+            android:label="@string/title_activity_player_selection_v11" >
+        </activity>
+        <activity
+            android:name="bluemango.matchorganizer.MatchBoardV11Activity"
+            android:label="@string/title_activity_match_board_v11" >
         </activity>
     </application>
 

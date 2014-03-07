@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal"
+    android:paddingLeft="0dp"
+    android:paddingTop="6dp" >
+
+    <TextView
+        android:id="@+id/rowid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="20sp"
+        android:paddingRight="2dp" />
+
+    <TextView
+        android:id="@+id/rowidcolon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_toRightOf="@id/rowid"
+        android:text="| "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rowidcolon"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/valore"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nome"
+        android:textSize="20sp"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/ruolo"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/valore"
+        android:textSize="20sp"
+        android:gravity="center" />
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@id/ruolo"
+        android:src="@drawable/check"
+        android:visibility="invisible"
+        android:contentDescription="@string/status" />
+
+</RelativeLayout>
